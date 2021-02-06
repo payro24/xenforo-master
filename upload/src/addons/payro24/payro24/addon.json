@@ -1,0 +1,14 @@
+{
+    "legacy_addon_id": "payro24/payro24",
+    "title": "payro24",
+    "description": "payro24 Payment Gateway",
+    "version_id": 1,
+    "version_string": "1.0.1",
+    "dev": "JMDMahdi, meysamrazmi, Vispamir, Publisher: payro24",
+    "dev_url": "https://payro24.ir/",
+    "faq_url": "",
+    "support_url": "",
+    "extra_urls": [],
+    "require": [],
+    "icon": "icon.png"
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="payro24_api_key_id" version_id="1" version_string="1.0.0"><![CDATA[payro24 API KEY]]></phrase>
+  <phrase title="payro24_confirm_payment_details" version_id="1" version_string="1.0.0"><![CDATA[تایید پرداخت payro24]]></phrase>
+  <phrase title="payro24_default_failed_message" version_id="1" version_string="1.0.0"><![CDATA[پرداخت شما ناموفق بوده است. لطفا مجددا تلاش نمایید یا در صورت بروز اشکال با مدیر سایت تماس بگیرید.]]></phrase>
+  <phrase title="payro24_default_success_message" version_id="1" version_string="1.0.0"><![CDATA[پرداخت شما با موفقیت انجام شد. کد رهگیری: {track_id}]]></phrase>
+  <phrase title="payro24_failed_message_text" version_id="1" version_string="1.0.0"><![CDATA[پیام پرداخت ناموفق]]></phrase>
+  <phrase title="payro24_payment_comment" version_id="1" version_string="1.0.0"><![CDATA[متن پیامی که می خواهید بعد از پرداخت به کاربر نمایش دهید را وارد کنید. همچنین می توانید از شورت کدهای {order_id} برای نمایش شماره سفارش و {track_id} برای نمایش کد رهگیری پیرو استفاده نمایید.]]></phrase>
+  <phrase title="payro24_sandbox_text" version_id="1" version_string="1.0.0"><![CDATA[آزمایشگاه]]></phrase>
+  <phrase title="payro24_success_message_text" version_id="1" version_string="1.0.0"><![CDATA[پیام پرداخت موفق]]></phrase>
+  <phrase title="you_must_provide_payro24_api_key" version_id="1" version_string="1.0.0"><![CDATA[You must provide a payro24 API KEY to set up this payment gateway]]></phrase>
+</phrases>

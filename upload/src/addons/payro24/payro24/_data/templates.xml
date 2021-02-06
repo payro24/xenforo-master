@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="admin" title="payment_profile_payro24" version_id="1" version_string="1.0.0"><![CDATA[
+<xf:textboxrow name="options[payro24_api_key]" value="{$profile.options.payro24_api_key}"
+	label="{{ phrase('payro24_api_key_id') }}"
+	hint="{{ phrase('required') }}">
+</xf:textboxrow>
+<xf:checkboxrow>
+	<xf:option name="options[payro24_sandbox]" selected="$profile.options.payro24_sandbox" label="{{ phrase('payro24_sandbox_text') }}" />
+</xf:checkboxrow>
+<xf:textboxrow name="options[payro24_success_message]"
+    explain="{{ phrase('payro24_payment_comment') }}"
+    value="{{ $profile.options.payro24_success_message ? $profile.options.payro24_success_message : phrase('payro24_default_success_message') }}"
+	label="{{ phrase('payro24_success_message_text') }}">
+</xf:textboxrow>
+<xf:textboxrow name="options[payro24_failed_message]"
+    explain="{{ phrase('payro24_payment_comment') }}"
+    value="{{ $profile.options.payro24_failed_message ? $profile.options.payro24_failed_message : phrase('payro24_default_failed_message') }}"
+	label="{{ phrase('payro24_failed_message_text') }}">
+</xf:textboxrow>
+<xf:hiddenval name="options[legacy]" value="{{ $profile.options.legacy ? 1 : 0 }}" />
+]]></template>
+  <template type="public" title="payment_initiate_payro24" version_id="1" version_string="1.0.0"><![CDATA[<xf:css src="payment_initiate.less" />
+<xf:title>{{ phrase('payro24_confirm_payment_details') }}</xf:title>
+<form action="{$endpointUrl}" class="block block--paymentInitiate" method="GET">
+	<div class="block-container">
+		<div class="block-body">
+			<xf:formrow controlid="element">
+				<div class="formRow-explain">{{ phrase('payments_processed_securely_by_x', {'link': 'https://payro24.ir/', 'provider': 'payro24'}) }}</div>
+			</xf:formrow>
+			<hr class="formRowSep" />
+			<xf:formrow label="" rowtype="button">
+				<xf:button type="submit" icon="payment">
+					{{ phrase('pay_x', {'cost': $purchase.cost|currency($purchase.currency)}) }}
+				</xf:button>
+			</xf:formrow>
+			<xf:foreach loop="$payment" value="$value" key="$name">
+				<input type="hidden" name="{$name}" value="{$value}" />
+			</xf:foreach>
+		</div>
+	</div>
+</form>]]></template>
+</templates>
